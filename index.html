@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Music Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="home">
+        <h1>Welcome to [Your Name]'s Music</h1>
+        <p>Discover my latest tracks, albums, and live performances.</p>
+    </section>
+
+    <section id="music">
+        <h2>My Music</h2>
+        <!-- Example of an embedded SoundCloud track -->
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" 
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true">
+        </iframe>
+        
+        <!-- Example of HTML5 audio player -->
+        <audio controls>
+            <source src="music/yourtrack.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>[Your bio here] - Share your story, influences, and journey as a musician.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+        <p>Follow me on:
+            <a href="https://twitter.com/yourprofile">Twitter</a> |
+            <a href="https://instagram.com/yourprofile">Instagram</a> |
+            <a href="https://youtube.com/yourprofile">YouTube</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
