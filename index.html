@@ -1,59 +1,950 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Music Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h1>Welcome to [Your Name]'s Music</h1>
-        <p>Discover my latest tracks, albums, and live performances.</p>
-    </section>
-
-    <section id="music">
-        <h2>My Music</h2>
-        <!-- Example of an embedded SoundCloud track -->
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" 
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&inverse=false&auto_play=false&show_user=true">
-        </iframe>
-        
-        <!-- Example of HTML5 audio player -->
-        <audio controls>
-            <source src="music/yourtrack.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>[Your bio here] - Share your story, influences, and journey as a musician.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email me at: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-        <p>Follow me on:
-            <a href="https://twitter.com/yourprofile">Twitter</a> |
-            <a href="https://instagram.com/yourprofile">Instagram</a> |
-            <a href="https://youtube.com/yourprofile">YouTube</a>
-        </p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
-</body>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/static/app_generated_index-6937cd5a.Dh83b5ia.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 16w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 32w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 48w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 64w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 96w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 128w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 256w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 384w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 640w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 750w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 828w, /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 1080w"
+      imagesizes="100vw"
+    />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 16w, /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 32w, /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 48w, /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 64w, /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 96w, /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 128w, /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 256w"
+      imagesizes="100vw"
+    />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 16w, /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 32w, /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 48w, /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 64w, /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 96w, /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 128w, /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 256w"
+      imagesizes="100vw"
+    />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 16w, /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 32w, /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 48w, /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 64w, /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 96w, /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 128w, /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 256w"
+      imagesizes="100vw"
+    />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 16w, /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 32w, /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 48w, /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 64w, /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 96w, /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 128w, /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 256w"
+      imagesizes="100vw"
+    />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/Group_howpTHBKp5i1QxNPrrG_5.svg 16w, /assets/Group_howpTHBKp5i1QxNPrrG_5.svg 32w, /assets/Group_howpTHBKp5i1QxNPrrG_5.svg 48w, /assets/Group_howpTHBKp5i1QxNPrrG_5.svg 64w, /assets/Group_howpTHBKp5i1QxNPrrG_5.svg 96w, /assets/Group_howpTHBKp5i1QxNPrrG_5.svg 128w"
+      imagesizes="100vw"
+    />
+    <meta property="og:url" content="https://url/" />
+    <title>Personal Portfolio Template</title>
+    <meta property="og:title" content="Personal Portfolio Template" />
+    <meta
+      name="description"
+      content="Portoflio of my work and customer stories."
+    />
+    <meta
+      property="og:description"
+      content="Portoflio of my work and customer stories."
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="w-body">
+    <div class="w-box">
+      <div style="display: contents">
+        <div style="display: contents">
+          <nav class="w-box c1357293 c9jnjeu c1myzjic ckmmjuv czr2pxy c155uc7w">
+            <a class="w-link" href="#"
+              ><img
+                alt=""
+                class="w-image"
+                src="data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSIxNDAiCiAgaGVpZ2h0PSIxNDAiCiAgdmlld0JveD0iMCAwIDYwMCA2MDAiCiAgZmlsbD0ibm9uZSIKICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjREZFM0U2IiAvPgogIDxwYXRoCiAgICBmaWxsLXJ1bGU9ImV2ZW5vZGQiCiAgICBjbGlwLXJ1bGU9ImV2ZW5vZGQiCiAgICBkPSJNNDUwIDE3MEgxNTBDMTQxLjcxNiAxNzAgMTM1IDE3Ni43MTYgMTM1IDE4NVY0MTVDMTM1IDQyMy4yODQgMTQxLjcxNiA0MzAgMTUwIDQzMEg0NTBDNDU4LjI4NCA0MzAgNDY1IDQyMy4yODQgNDY1IDQxNVYxODVDNDY1IDE3Ni43MTYgNDU4LjI4NCAxNzAgNDUwIDE3MFpNMTUwIDE0NUMxMjcuOTA5IDE0NSAxMTAgMTYyLjkwOSAxMTAgMTg1VjQxNUMxMTAgNDM3LjA5MSAxMjcuOTA5IDQ1NSAxNTAgNDU1SDQ1MEM0NzIuMDkxIDQ1NSA0OTAgNDM3LjA5MSA0OTAgNDE1VjE4NUM0OTAgMTYyLjkwOSA0NzIuMDkxIDE0NSA0NTAgMTQ1SDE1MFoiCiAgICBmaWxsPSIjQzFDOENEIgogIC8+CiAgPHBhdGgKICAgIGQ9Ik0yMzcuMTM1IDIzNS4wMTJDMjM3LjEzNSAyNTUuNzIzIDIyMC4zNDUgMjcyLjUxMiAxOTkuNjM1IDI3Mi41MTJDMTc4LjkyNCAyNzIuNTEyIDE2Mi4xMzUgMjU1LjcyMyAxNjIuMTM1IDIzNS4wMTJDMTYyLjEzNSAyMTQuMzAxIDE3OC45MjQgMTk3LjUxMiAxOTkuNjM1IDE5Ny41MTJDMjIwLjM0NSAxOTcuNTEyIDIzNy4xMzUgMjE0LjMwMSAyMzcuMTM1IDIzNS4wMTJaIgogICAgZmlsbD0iI0MxQzhDRCIKICAvPgogIDxwYXRoCiAgICBkPSJNMTYwIDQwNVYzNjcuMjA1TDIyMS42MDkgMzA2LjM2NEwyNTYuNTUyIDMzOC42MjhMMzU4LjE2MSAyMzRMNDQwIDMxNi4wNDNWNDA1SDE2MFoiCiAgICBmaWxsPSIjQzFDOENEIgogIC8+Cjwvc3ZnPg=="
+                decoding="async"
+                loading="eager"
+            /></a>
+          </nav>
+        </div>
+      </div>
+      <main class="w-box">
+        <section class="w-box cna0hdz c1mzb2kd c130qyz3 cqlgvkl c82o5tr">
+          <div
+            class="w-box c1357293 c9jnjeu c1myzjic ckmmjuv czr2pxy c155uc7w copqmak czt6zfr cen6rs1 c109i5bh c1qyy4dh cx6c9kw c174sw29"
+          >
+            <div
+              class="w-box cry9bxc c1lfjoq7 c16xs6ny ct02u4h c10zkoym ct8c5y2"
+            >
+              <h1 class="w-heading c11nr3ex c11dowh9 c32myit cwrra4i c1b44psv">
+                Your Name Here
+              </h1>
+              <div class="w-box cwvpjlf c149s0mc">
+                <div style="display: contents">
+                  <div style="display: contents">
+                    <img
+                      alt="Picture of me"
+                      width="500"
+                      height="500"
+                      src="/assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg"
+                      class="w-image c57yvzh c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t"
+                      sizes="100vw"
+                      srcset="
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   16w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   32w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   48w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   64w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   96w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  128w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  256w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  384w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  640w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  750w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  828w,
+                        /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 1080w
+                      "
+                      decoding="async"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p class="w-paragraph c1rco612">
+                Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <a
+                class="w-link c14yqvd4 cl8m66n c13b531o c1my01bv c14z1eqr c1ktl1y1 cgl7u82 crlid6h caoqbwa c1aguln c135vpv5 cqrpgto cl60rel c1ib9cr2"
+                href="#"
+                ><span class="w-text">Let’s get started</span>
+                <div class="w-html-embed csru8nn cblpe2z c1y0z7zr">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 6 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.63335 4.87364L1.51379 0.759206C1.16776 0.413598 0.605566 0.413598 0.259528 0.759206C-0.0865095 1.10481 -0.0865095 1.66631 0.259528 2.01191L3.75196 5.5L0.259528 8.9881C-0.0865095 9.3337 -0.0865095 9.8952 0.259528 10.2408C0.432545 10.4136 0.65957 10.5 0.886652 10.5C1.11373 10.5 1.34078 10.4136 1.51378 10.2408L5.63333 6.12637C5.97937 5.78076 5.97937 5.21927 5.63333 4.87366L5.63335 4.87364Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></div
+              ></a>
+            </div>
+            <div class="w-box cc3dq2t">
+              <div style="display: contents">
+                <div style="display: contents">
+                  <img
+                    alt="Picture of me"
+                    width="500"
+                    height="500"
+                    src="/assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg"
+                    class="w-image c57yvzh c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t"
+                    sizes="100vw"
+                    srcset="
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   16w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   32w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   48w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   64w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg   96w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  128w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  256w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  384w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  640w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  750w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg  828w,
+                      /assets/jackson-schaal-MXOMvdH0E0A-unsplash_LJ3g1g03b8ed1gQbFj4vf.jpg 1080w
+                    "
+                    decoding="async"
+                    loading="eager"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="casestudies"
+          class="w-box c1fo9lv5 c1mzb2kd c130qyz3 cqlgvkl c82o5tr"
+        >
+          <div
+            class="w-box c1357293 c9jnjeu c1myzjic ckmmjuv czr2pxy c155uc7w c1v273o4 c1nn476t"
+          >
+            <h2
+              class="w-heading c160atll cn12ej2 c32myit cwrra4i c1b44psv c1iq8fyu c12f3mdq"
+            >
+              Worked with
+            </h2>
+            <div
+              class="w-box copqmak c10zkoym ct8c5y2 corcrpm cx6c9kw c1mpedrw c1jjfh4b c1bulmrh cehyk0s"
+            >
+              <img
+                alt="Clickup Logo"
+                width="83"
+                height="20"
+                src="/assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg"
+                class="w-image cup9vyi c1ldum37 c1n5d942 c5tmc3l ccfzz03 cub2gss cgcvr98 c1xjllne c1s9lq31 c1bkqfhr c1bt8bzx c1e3v5m0 c17jj8qr c1mt98we"
+                sizes="100vw"
+                srcset="
+                  /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg  16w,
+                  /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg  32w,
+                  /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg  48w,
+                  /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg  64w,
+                  /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg  96w,
+                  /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 128w,
+                  /assets/clickup_logo_1_N0xfWHz5Su17oejLYSjgH.svg 256w
+                "
+                decoding="async"
+                loading="eager"
+              /><img
+                alt="Dropbox Logo"
+                width="95"
+                height="22"
+                src="/assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg"
+                class="w-image cup9vyi c1ldum37 c1n5d942 c5tmc3l ccfzz03 cub2gss cgcvr98 c1xjllne c1s9lq31 c1bkqfhr c1bt8bzx c1e3v5m0 c17jj8qr c1mt98we"
+                sizes="100vw"
+                srcset="
+                  /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg  16w,
+                  /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg  32w,
+                  /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg  48w,
+                  /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg  64w,
+                  /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg  96w,
+                  /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 128w,
+                  /assets/dropbox_blue_1_3KbvkJlT6gMLtNm2Pj9sh.svg 256w
+                "
+                decoding="async"
+                loading="eager"
+              /><img
+                alt="Paychex Logo"
+                width="88"
+                height="14"
+                src="/assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg"
+                class="w-image cup9vyi c1ldum37 c1n5d942 c5tmc3l ccfzz03 cub2gss cgcvr98 c1xjllne c1s9lq31 c1bkqfhr c1bt8bzx c1e3v5m0 c17jj8qr c1mt98we"
+                sizes="100vw"
+                srcset="
+                  /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg  16w,
+                  /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg  32w,
+                  /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg  48w,
+                  /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg  64w,
+                  /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg  96w,
+                  /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 128w,
+                  /assets/Group_(1)_3wsl5LDM-tBOSPQkbnCc3.svg 256w
+                "
+                decoding="async"
+                loading="eager"
+              /><img
+                alt="Elastic Logo"
+                width="82"
+                height="28"
+                src="/assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg"
+                class="w-image cup9vyi c1ldum37 c1n5d942 c5tmc3l ccfzz03 cub2gss cgcvr98 c1xjllne c1s9lq31 c1bkqfhr c1bt8bzx c1e3v5m0 c17jj8qr c1mt98we"
+                sizes="100vw"
+                srcset="
+                  /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg  16w,
+                  /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg  32w,
+                  /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg  48w,
+                  /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg  64w,
+                  /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg  96w,
+                  /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 128w,
+                  /assets/Elastic_logo_1_jIqqikC1QFcSQhPOD55I-.svg 256w
+                "
+                decoding="async"
+                loading="eager"
+              /><img
+                alt="Stripe Logo"
+                width="61"
+                height="25"
+                src="/assets/Group_howpTHBKp5i1QxNPrrG_5.svg"
+                class="w-image cup9vyi c1ldum37 c1n5d942 c5tmc3l ccfzz03 cub2gss cgcvr98 c1xjllne c1s9lq31 c1bkqfhr c1bt8bzx c1e3v5m0 c17jj8qr c1mt98we"
+                sizes="100vw"
+                srcset="
+                  /assets/Group_howpTHBKp5i1QxNPrrG_5.svg  16w,
+                  /assets/Group_howpTHBKp5i1QxNPrrG_5.svg  32w,
+                  /assets/Group_howpTHBKp5i1QxNPrrG_5.svg  48w,
+                  /assets/Group_howpTHBKp5i1QxNPrrG_5.svg  64w,
+                  /assets/Group_howpTHBKp5i1QxNPrrG_5.svg  96w,
+                  /assets/Group_howpTHBKp5i1QxNPrrG_5.svg 128w
+                "
+                decoding="async"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="casestudies" class="w-box cna0hdz c1mzb2kd">
+          <div class="w-box c1357293 c9jnjeu c1myzjic ckmmjuv czr2pxy c155uc7w">
+            <div
+              class="w-box cry9bxc c1qyy4dh ct02u4h c1z0l37u c1ml0hr7 c1lfjoq7 c1qom380 c1rco612 c9jnjeu c1357293"
+            >
+              <h2 class="w-heading c1dxq9cf c11dowh9 c32myit cwrra4i c1qom380">
+                Case Studies
+              </h2>
+              <p class="w-paragraph c1qom380">
+                Solving user &amp; business problems since last 15+ years. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="w-box cry9bxc c1lfjoq7 c1s46o9r cdczzub">
+              <div
+                class="w-box c1p8k1aa copqmak c1lxiyww c10zkoym ct8c5y2 c18v2pa2 c1qyy4dh c1f64byh cx6c9kw c13vvg1g"
+              >
+                <div
+                  data-ani="slide-right"
+                  class="w-box cry9bxc c1lfjoq7 c10zkoym ct8c5y2 ct02u4h c1mcu1jn c16xs6ny"
+                >
+                  <div
+                    class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g"
+                  >
+                    <div
+                      class="w-text c1j0uetl cfphuol c1911kcz cif7xwi crezeol cy9kb2v cu385pj cvghewe cfzf927 c1noknrj c11dowh9"
+                    >
+                      Fintech
+                    </div>
+                    <h3 class="w-heading cuoke4w c11dowh9 c32myit cwrra4i">
+                      Work name here
+                    </h3>
+                    <p class="w-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. sed do eiusmod tempor incididunt ut labore et
+                      dolore magna.
+                    </p>
+                  </div>
+                  <div class="w-box">
+                    <a
+                      class="w-link c1a6lg5i c276cpf cgl7u82 crlid6h caoqbwa c1aguln c135vpv5 caafw5v cm6idqo c82q2z cl60rel c1ib9cr2"
+                      href="#"
+                      ><span class="w-text">View case study</span>
+                      <div class="w-html-embed csru8nn cblpe2z c1y0z7zr">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 6 11"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.63335 4.87364L1.51379 0.759206C1.16776 0.413598 0.605566 0.413598 0.259528 0.759206C-0.0865095 1.10481 -0.0865095 1.66631 0.259528 2.01191L3.75196 5.5L0.259528 8.9881C-0.0865095 9.3337 -0.0865095 9.8952 0.259528 10.2408C0.432545 10.4136 0.65957 10.5 0.886652 10.5C1.11373 10.5 1.34078 10.4136 1.51378 10.2408L5.63333 6.12637C5.97937 5.78076 5.97937 5.21927 5.63333 4.87366L5.63335 4.87364Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+                <div data-ani="slide-left" class="w-box">
+                  <img
+                    alt="Laptop on desk"
+                    width="800"
+                    height="800"
+                    src="/assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg"
+                    class="w-image cr8yqfm c1ufwdzl c5blvcv cml0h3f crf3ls2 c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   16w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   32w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   48w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   64w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   96w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  128w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  256w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  384w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  640w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  750w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  828w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 1080w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 1200w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 1920w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div
+                class="w-box c1p8k1aa copqmak c1lxiyww c10zkoym ct8c5y2 c18v2pa2 c1qyy4dh c1f64byh cx6c9kw c174sw29"
+              >
+                <div data-ani="slide-right" class="w-box">
+                  <img
+                    alt="creator studio"
+                    width="800"
+                    height="1422"
+                    src="/assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg"
+                    class="w-image cr8yqfm c1ufwdzl c5blvcv cml0h3f crf3ls2 c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg   16w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg   32w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg   48w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg   64w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg   96w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg  128w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg  256w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg  384w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg  640w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg  750w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg  828w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg 1080w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg 1200w,
+                      /assets/alan-quirvan-igcMIwAVAS4-unsplash_QIfP13CRbB2FEB6kth6cK.jpg 1920w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  data-ani="slide-left"
+                  class="w-box cry9bxc c1lfjoq7 c10zkoym ct8c5y2 ct02u4h c1mcu1jn c16xs6ny"
+                >
+                  <div
+                    class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g"
+                  >
+                    <div
+                      class="w-text c9o269a c1tpxdjq c1911kcz cif7xwi crezeol cy9kb2v cu385pj cvghewe cfzf927 c1noknrj c11dowh9"
+                    >
+                      EdTech
+                    </div>
+                    <h3 class="w-heading cuoke4w c11dowh9 c32myit cwrra4i">
+                      Work name here
+                    </h3>
+                    <p class="w-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. sed do eiusmod tempor incididunt ut labore et
+                      dolore magna.
+                    </p>
+                  </div>
+                  <div class="w-box">
+                    <a
+                      class="w-link c1b44psv c1l1cgt9 cgl7u82 crlid6h caoqbwa c1aguln c135vpv5 caafw5v c5nr124 c82q2z cl60rel c1ib9cr2"
+                      href="#"
+                      ><span class="w-text">View case study</span>
+                      <div class="w-html-embed csru8nn cblpe2z c1y0z7zr">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 6 11"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.63335 4.87364L1.51379 0.759206C1.16776 0.413598 0.605566 0.413598 0.259528 0.759206C-0.0865095 1.10481 -0.0865095 1.66631 0.259528 2.01191L3.75196 5.5L0.259528 8.9881C-0.0865095 9.3337 -0.0865095 9.8952 0.259528 10.2408C0.432545 10.4136 0.65957 10.5 0.886652 10.5C1.11373 10.5 1.34078 10.4136 1.51378 10.2408L5.63333 6.12637C5.97937 5.78076 5.97937 5.21927 5.63333 4.87366L5.63335 4.87364Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-box c1p8k1aa copqmak c1lxiyww c10zkoym ct8c5y2 c18v2pa2 c1qyy4dh c1f64byh cx6c9kw c13vvg1g"
+              >
+                <div
+                  data-ani="slide-right"
+                  class="w-box cry9bxc c1lfjoq7 c10zkoym ct8c5y2 ct02u4h c1mcu1jn c16xs6ny"
+                >
+                  <div
+                    class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g"
+                  >
+                    <div
+                      class="w-text c24qcja c9u18q3 c1911kcz cif7xwi crezeol cy9kb2v cu385pj cvghewe cfzf927 c1noknrj c11dowh9"
+                    >
+                      Pharma
+                    </div>
+                    <h3 class="w-heading cuoke4w c11dowh9 c32myit cwrra4i">
+                      Work name here
+                    </h3>
+                    <p class="w-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. sed do eiusmod tempor incididunt ut labore et
+                      dolore magna.
+                    </p>
+                  </div>
+                  <div class="w-box">
+                    <a
+                      class="w-link c14yqvd4 cl8m66n cgl7u82 crlid6h caoqbwa c1aguln c135vpv5 caafw5v cqrpgto c82q2z cl60rel c1ib9cr2"
+                      href="#"
+                      ><span class="w-text">View case study</span>
+                      <div class="w-html-embed csru8nn cblpe2z c1y0z7zr">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 6 11"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.63335 4.87364L1.51379 0.759206C1.16776 0.413598 0.605566 0.413598 0.259528 0.759206C-0.0865095 1.10481 -0.0865095 1.66631 0.259528 2.01191L3.75196 5.5L0.259528 8.9881C-0.0865095 9.3337 -0.0865095 9.8952 0.259528 10.2408C0.432545 10.4136 0.65957 10.5 0.886652 10.5C1.11373 10.5 1.34078 10.4136 1.51378 10.2408L5.63333 6.12637C5.97937 5.78076 5.97937 5.21927 5.63333 4.87366L5.63335 4.87364Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+                <div data-ani="slide-left" class="w-box">
+                  <img
+                    alt="Screen behind plant"
+                    width="800"
+                    height="534"
+                    src="/assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg"
+                    class="w-image cr8yqfm c1ufwdzl c5blvcv cml0h3f crf3ls2 c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   16w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   32w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   48w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   64w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   96w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  128w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  256w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  384w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  640w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  750w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  828w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 1080w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 1200w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 1920w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="testimonials"
+          class="w-box cna0hdz c1mzb2kd c130qyz3 cqlgvkl c82o5tr"
+        >
+          <div class="w-box c1357293 c9jnjeu c1myzjic ckmmjuv czr2pxy c155uc7w">
+            <div
+              class="w-box cry9bxc c1qyy4dh ct02u4h c1z0l37u c1ml0hr7 c1lfjoq7 c1qom380 c1rco612 c9jnjeu c1357293"
+            >
+              <h2 class="w-heading c1dxq9cf c11dowh9 c32myit cwrra4i c1b44psv">
+                Testimonials
+              </h2>
+              <p class="w-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div
+              data-ani-children="true"
+              data-ani-progress="slide-up"
+              class="w-box copqmak c10zkoym ct8c5y2 c1f64byh cx6c9kw c174sw29"
+            >
+              <div
+                class="w-box cr8yqfm c1ufwdzl c5blvcv cml0h3f cavd3zn c1nq45hp czjsrhv c1di64f2 c1ru090q cujxabw c119suh8 cnqbj7z cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7 cglkhmz c97dlol c1t5a35i"
+              >
+                <p class="w-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="w-box cry9bxc c1qyy4dh c1wt8a7g c1z0l37u c1ml0hr7">
+                  <img
+                    alt="Picture of client"
+                    width="800"
+                    height="800"
+                    src="/assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg"
+                    class="w-image cx2gy9w c1y46zjw c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t cagnu3j c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg   16w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg   32w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg   48w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg   64w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg   96w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg  128w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg  256w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg  384w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg  640w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg  750w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg  828w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg 1080w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg 1200w,
+                      /assets/medelwaid-QXfwxeZLVwI-unsplash_(1)_kkcyAOf--iKMh7FcB6pbB.jpg 1920w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <div class="w-text c8ys3vy c1b44psv c11dowh9 c5z69y4">
+                    Client Name
+                  </div>
+                </div>
+                <div
+                  class="w-text cdwd3jx c7gavf2 c10wulwe cdceycu c1nk3tgl c1b44psv c1e4un1c c13dem6u"
+                >
+                  “
+                </div>
+              </div>
+              <div
+                class="w-box cr8yqfm c1ufwdzl c5blvcv cml0h3f cavd3zn c1nq45hp czjsrhv c1di64f2 c1ru090q cujxabw c119suh8 cnqbj7z cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7 cglkhmz c97dlol c1t5a35i"
+              >
+                <p class="w-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="w-box cry9bxc c1qyy4dh c1wt8a7g c1z0l37u c1ml0hr7">
+                  <img
+                    alt="Picture of client"
+                    width="800"
+                    height="800"
+                    src="/assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg"
+                    class="w-image cx2gy9w c1y46zjw c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t cagnu3j c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg   16w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg   32w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg   48w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg   64w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg   96w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg  128w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg  256w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg  384w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg  640w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg  750w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg  828w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg 1080w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg 1200w,
+                      /assets/ansspvt-titan-pvdVaXdoCXU-unsplash_(1)_PQNwbneSvcPuJLnJQv7QP.jpg 1920w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <div class="w-text c8ys3vy c1b44psv c11dowh9 c5z69y4">
+                    Client Name
+                  </div>
+                </div>
+                <div
+                  class="w-text cdwd3jx c7gavf2 c10wulwe cdceycu c1nk3tgl c1b44psv c1e4un1c c13dem6u"
+                >
+                  “
+                </div>
+              </div>
+              <div
+                class="w-box cr8yqfm c1ufwdzl c5blvcv cml0h3f cavd3zn c1nq45hp czjsrhv c1di64f2 c1ru090q cujxabw c119suh8 cnqbj7z cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7 cglkhmz c97dlol c1t5a35i"
+              >
+                <p class="w-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="w-box cry9bxc c1qyy4dh c1wt8a7g c1z0l37u c1ml0hr7">
+                  <img
+                    alt="Picture of client"
+                    width="800"
+                    height="800"
+                    src="/assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg"
+                    class="w-image cx2gy9w c1y46zjw c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t cagnu3j c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg   16w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg   32w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg   48w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg   64w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg   96w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg  128w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg  256w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg  384w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg  640w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg  750w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg  828w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg 1080w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg 1200w,
+                      /assets/kazi-mizan-WocOfFRUTSM-unsplash_(1)_eN96pfgtszqE5dIeY7ltC.jpg 1920w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <div class="w-text c8ys3vy c1b44psv c11dowh9 c5z69y4">
+                    Client Name
+                  </div>
+                </div>
+                <div
+                  class="w-text cdwd3jx c7gavf2 c10wulwe cdceycu c1nk3tgl c1b44psv c1e4un1c c13dem6u"
+                >
+                  “
+                </div>
+              </div>
+              <div
+                class="w-box cr8yqfm c1ufwdzl c5blvcv cml0h3f cavd3zn c1nq45hp czjsrhv c1di64f2 c1ru090q cujxabw c119suh8 cnqbj7z cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7 cglkhmz c97dlol c1t5a35i"
+              >
+                <p class="w-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="w-box cry9bxc c1qyy4dh c1wt8a7g c1z0l37u c1ml0hr7">
+                  <img
+                    alt="Picture of client"
+                    width="800"
+                    height="800"
+                    src="/assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg"
+                    class="w-image cx2gy9w c1y46zjw c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t cagnu3j c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg   16w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg   32w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg   48w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg   64w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg   96w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg  128w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg  256w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg  384w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg  640w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg  750w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg  828w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg 1080w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg 1200w,
+                      /assets/ashley-nicole-UV5M4aG65mg-unsplash_OlQwWr-uH_cqiE43TiUvh.jpg 1920w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <div class="w-text c8ys3vy c1b44psv c11dowh9 c5z69y4">
+                    Client Name
+                  </div>
+                </div>
+                <div
+                  class="w-text cdwd3jx c7gavf2 c10wulwe cdceycu c1nk3tgl c1b44psv c1e4un1c c13dem6u"
+                >
+                  “
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="w-box cna0hdz c1mzb2kd">
+          <div class="w-box c1357293 c9jnjeu c1myzjic ckmmjuv czr2pxy c155uc7w">
+            <div
+              class="w-box cry9bxc c1qyy4dh ct02u4h c1z0l37u c1ml0hr7 c1lfjoq7 c1qom380 c1rco612 c9jnjeu c1357293"
+            >
+              <h2 class="w-heading c1dxq9cf c11dowh9 c32myit cwrra4i c1qom380">
+                Recent Work
+              </h2>
+              <p class="w-paragraph c1qom380">
+                Solving user &amp; business problems since last 15+ years. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div
+              data-ani-children="true"
+              data-ani-progress="slide-up"
+              class="w-box copqmak c10zkoym ct8c5y2 c1f64byh cx6c9kw c174sw29"
+            >
+              <div
+                class="w-box c1p8k1aa cry9bxc c1lfjoq7 c10zkoym ct8c5y2 c18v2pa2 c16xs6ny"
+              >
+                <div class="w-box">
+                  <img
+                    alt="Laptop on desk"
+                    width="1920"
+                    height="1920"
+                    src="/assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg"
+                    class="w-image cr8yqfm c1ufwdzl c5blvcv cml0h3f crf3ls2 c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   16w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   32w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   48w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   64w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg   96w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  128w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  256w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  384w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  640w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  750w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg  828w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 1080w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 1200w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 1920w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 2048w,
+                      /assets/ux-store-ukeUH3KbMWU-unsplash_(1)_O4QinEBfJM4QtbZqgomLl.jpg 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c10zkoym ct8c5y2 ct02u4h c1mcu1jn c16xs6ny"
+                >
+                  <div
+                    class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g"
+                  >
+                    <h3 class="w-heading cuoke4w c11dowh9 c32myit cwrra4i">
+                      Work name here
+                    </h3>
+                    <p class="w-paragraph">
+                      Labore et dolore magna aliqua. sed do eiusmod tempor
+                      incididunt ut labore et dolore magna.
+                    </p>
+                  </div>
+                  <div class="w-box">
+                    <a
+                      class="w-link c14yqvd4 cl8m66n c13b531o c1my01bv c14z1eqr c1ktl1y1 cgl7u82 crlid6h caoqbwa c1aguln c135vpv5 cqrpgto cl60rel c1ib9cr2"
+                      href="#"
+                      ><span class="w-text">Know more</span>
+                      <div class="w-html-embed csru8nn cblpe2z c1y0z7zr">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 6 11"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.63335 4.87364L1.51379 0.759206C1.16776 0.413598 0.605566 0.413598 0.259528 0.759206C-0.0865095 1.10481 -0.0865095 1.66631 0.259528 2.01191L3.75196 5.5L0.259528 8.9881C-0.0865095 9.3337 -0.0865095 9.8952 0.259528 10.2408C0.432545 10.4136 0.65957 10.5 0.886652 10.5C1.11373 10.5 1.34078 10.4136 1.51378 10.2408L5.63333 6.12637C5.97937 5.78076 5.97937 5.21927 5.63333 4.87366L5.63335 4.87364Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-box c1p8k1aa cry9bxc c1lfjoq7 c10zkoym ct8c5y2 c18v2pa2 c16xs6ny"
+              >
+                <div class="w-box">
+                  <img
+                    alt="Laptop on desk"
+                    width="1920"
+                    height="1282"
+                    src="/assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg"
+                    class="w-image cr8yqfm c1ufwdzl c5blvcv cml0h3f crf3ls2 c1gxuxwl c57idyp"
+                    sizes="100vw"
+                    srcset="
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   16w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   32w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   48w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   64w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg   96w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  128w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  256w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  384w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  640w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  750w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg  828w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 1080w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 1200w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 1920w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 2048w,
+                      /assets/manny-pantoja-jaHvDkELPKU-unsplash_Bib_KYEDhRN_mwfhkyWPv.jpg 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c10zkoym ct8c5y2 ct02u4h c1mcu1jn c16xs6ny"
+                >
+                  <div
+                    class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g"
+                  >
+                    <h3 class="w-heading cuoke4w c11dowh9 c32myit cwrra4i">
+                      Work name here
+                    </h3>
+                    <p class="w-paragraph">
+                      Labore et dolore magna aliqua. sed do eiusmod tempor
+                      incididunt ut labore et dolore magna.
+                    </p>
+                  </div>
+                  <div class="w-box">
+                    <a
+                      class="w-link c14yqvd4 cl8m66n c13b531o c1my01bv c14z1eqr c1ktl1y1 cgl7u82 crlid6h caoqbwa c1aguln c135vpv5 cqrpgto cl60rel c1ib9cr2"
+                      href="#"
+                      ><span class="w-text">Know more</span>
+                      <div class="w-html-embed csru8nn cblpe2z c1y0z7zr">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 6 11"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.63335 4.87364L1.51379 0.759206C1.16776 0.413598 0.605566 0.413598 0.259528 0.759206C-0.0865095 1.10481 -0.0865095 1.66631 0.259528 2.01191L3.75196 5.5L0.259528 8.9881C-0.0865095 9.3337 -0.0865095 9.8952 0.259528 10.2408C0.432545 10.4136 0.65957 10.5 0.886652 10.5C1.11373 10.5 1.34078 10.4136 1.51378 10.2408L5.63333 6.12637C5.97937 5.78076 5.97937 5.21927 5.63333 4.87366L5.63335 4.87364Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div style="display: contents">
+        <div style="display: contents">
+          <footer class="w-box">
+            <div
+              class="w-box c1357293 c9jnjeu c1myzjic ckmmjuv czr2pxy c155uc7w"
+            ></div>
+          </footer>
+          <a
+            href="https://webstudio.is/"
+            target="_blank"
+            rel="nofollow"
+            class="w-link cx7e777 cn12ej2 c1ngdwug c10yh23j c7f1npl c1sjzfnm c1trj0l7 cjqo3r0 cbuoy5w c393lej csxsvt6 c1oj4qw c183qt6d c1twgu0n c5r7m82 c1fhiulb cifio c1u7hg1c c1qqyhy5 c1mb8swa c1awhn4n c1qyy4dh ct02u4h csru8nn c135vpv5 c119suh8 cujxabw c17xbrdu c1lvufj2 c1oohece co9inq6 c18nx7en c13zjl4p ch9sscy c272dxa"
+            ><img
+              alt="Webstudio Logo"
+              width="20"
+              height="20"
+              src="/assets/logo_r1qaJQiri6sK3rPyq-Sar.svg"
+              class="w-image c13fq7lq c1ckxn0n"
+              decoding="async"
+              loading="lazy"
+            /><span class="w-text">Built with Webstudio</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "abortReason": "!undefined",
+        "_urlRewrite": null,
+        "_urlRedirect": "!undefined",
+        "abortStatusCode": "!undefined",
+        "_abortCall": "!undefined",
+        "_pageContextInitIsPassedToClient": "!undefined",
+        "pageId": "/pages/index",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/",
+          "system": { "params": {}, "search": {}, "origin": "https://url" },
+          "resources": {},
+          "pageMeta": {
+            "title": "Personal Portfolio Template",
+            "description": "Portoflio of my work and customer stories.",
+            "excludePageFromSearch": false,
+            "language": "!undefined",
+            "socialImageAssetName": "!undefined",
+            "socialImageUrl": "!undefined",
+            "status": "!undefined",
+            "redirect": "!undefined",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script
+      src="/assets/entries/entry-server-routing.Cs6_NGv1.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_index.BaxTmSWr.js"
+      as="script"
+      type="text/javascript"
+    />
+  </body>
 </html>
